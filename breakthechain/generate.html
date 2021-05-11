@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Break the Chain Generator</title>
+        <link rel="stylesheet" href="../generator/generator.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
+        <script src="../../scripts/jquery-1.12.1.min.js"></script>
+        <script defer src="../generator/staticGen.js"></script>
+        <link rel="stylesheet" href="../generator/spectrum.css" />
+        <script src="../generator/spectrum.js"></script>
+
+        <!-- Template Specific -->
+        <link href="//fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet"><link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"><link href="//fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="scripts.js"></script>
+        <script defer src="flexGen.js"></script>
+    </head>
+    <body id="generate">
+        <header>
+            <h1>Break the Chain Template</h1>
+            <p>Use the form to the left and hit 'generate' to produce a sample and the associated code! Please note that to test script-based functions, you must first press 'generate' and then press 'run script'.</p>
+            <a href="../generator/generator.html"><i class="fas fa-angle-left"></i> Back</a>
+        </header>
+        <main>
+            <section class="form">
+                <div class="scroll">
+
+                    <!-- START FORM CONTENTS -->
+
+                    <!-- Template Type -->
+                    <h2>Template Type</h2>
+                    <div class="tempType">
+                        <label for="posting">
+                            <input type="radio" id="posting" name="type" value="posting" />
+                            <div><div></div></div>
+                            Posting
+                        </label>
+                        <label for="tabbed">
+                            <input type="radio" id="tabbed" name="type" value="tabbed" />
+                            <div><div></div></div>
+                            Tabbed
+                        </label>
+                        <label for="wanted">
+                            <input type="radio" id="wanted" name="type" value="wanted" />
+                            <div><div></div></div>
+                            Wanted
+                        </label>
+                        <label for="phone">
+                            <input type="radio" id="phone" name="type" value="phone" />
+                            <div><div></div></div>
+                            Phone
+                        </label>
+                        <label for="tindr">
+                            <input type="radio" id="tindr" name="type" value="tindr" />
+                            <div><div></div></div>
+                            Tindr
+                        </label>
+                        <label for="instagram">
+                            <input type="radio" id="instagram" name="type" value="instagram" />
+                            <div><div></div></div>
+                            Instagram
+                        </label>
+                        <label for="timeline">
+                            <input type="radio" id="timeline" name="type" value="timeline" />
+                            <div><div></div></div>
+                            Timeline
+                        </label>
+                        <label for="tracker">
+                            <input type="radio" id="tracker" name="type" value="tracker" />
+                            <div><div></div></div>
+                            Tracker
+                        </label>
+                        <label for="imagedev">
+                            <input type="radio" id="imagedev" name="type" value="imagedev" />
+                            <div><div></div></div>
+                            Image Dev
+                        </label>
+                        <label for="playlist">
+                            <input type="radio" id="playlist" name="type" value="playlist" />
+                            <div><div></div></div>
+                            Playlist
+                        </label>
+                        <label for="quotedev">
+                            <input type="radio" id="quotedev" name="type" value="quotedev" />
+                            <div><div></div></div>
+                            Quote Dev
+                        </label>
+                    </div>
+
+                    <!-- Styling -->
+                    <div class="twoCol">                     
+                        <span>
+                            <h2>Font Size</h2>
+                            <select name="fontSize">
+                                <option value="">Standard</option>
+                                <option value="smlFont">Small Font</option>
+                                <option value="lrgFont">Large Font</option>
+                            </select>
+                        </span>
+                        <span>
+                            <h2 class="fullWidth">Dark Mode?</h2>
+                            <span class="twoCol">
+                                <label for="dmY">
+                                    <input type="radio" id="dmY" name="dm" value="y" />
+                                    <div><div></div></div>
+                                    Yes
+                                </label>
+                                <label for="dmN">
+                                    <input type="radio" id="dmN" name="dm" value="n" />
+                                    <div><div></div></div>
+                                    No
+                                </label>                        
+                            </span>
+                        </span>
+                        <h2 class="fullWidth" style="margin-top: 20px;">Coloring</h2>
+                        <span class="threeCol fullWidth" style="margin-top: 0;">
+                            <label for="ccN">
+                                <input type="radio" id="ccN" name="tc" value="n" />
+                                <div><div></div></div>
+                                Group
+                            </label>
+                            <label for="ccY">
+                                <input type="radio" id="ccY" name="tc" value="y" />
+                                <div><div></div></div>
+                                Custom
+                            </label>    
+                            <label for="ccD">
+                                <input type="radio" id="ccD" name="tc" value="default" />
+                                <div><div></div></div>
+                                Default
+                            </label>                        
+                        </span>
+                    </div>
+                    <div class="hideFirst ifGroupCol">
+                        <span class="twoCol">
+                            <h2>Group</h2>
+                            <select name="groupColor">
+                                <option value="deity">Deity</option>
+                                <option value="creature">Creature</option>
+                                <option value="spirit">Spirit</option>
+                                <option value="gifted">Gifted</option>
+                                <option value="mortal">Mortal</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="hideFirst ifCustomCol">
+                        <h2>Character</h2>
+                        <input type="text" id="char" name="char" placeholder="First name only." /> 
+                        <div class="threeCol">
+                            <span>
+                                <h2>Main Accent</h2>
+                                <input type="color" id="accent" name="accent" />
+                            </span>
+                            <span>
+                                <h2>Dark Accent</h2>
+                                <input type="color" id="dkAccent" name="dkAccent" />  
+                            </span> 
+                            <span>
+                                <h2>Darker Accent</h2>
+                                <input type="color" id="textAccent" name="textAccent" />  
+                            </span>               
+                        </div>
+                    </div>
+
+                    <!-- Posting Template -->
+                    <div class="hideFirst typeSwitch ifPost">
+                        <hr>
+                        <span>
+                            <h2>Template Size</h2>
+                            <select name="tempSize">
+                                <option value="">Standard</option>
+                                <option value="xsmall">Extra Small</option>
+                                <option value="small">Small</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">Extra Large</option>
+                            </select>
+                        </span>
+                        <span class="twoCol fullWidth">
+                            <h2 class="fullWidth">Scrolling?</h2>
+                            <span class="twoCol">
+                                <label for="pscY">
+                                    <input type="radio" id="pscY" name="psc" value="y" />
+                                    <div><div></div></div>
+                                    Yes
+                                </label>
+                                <label for="pscN">
+                                    <input type="radio" id="pscN" name="psc" value="n" />
+                                    <div><div></div></div>
+                                    No
+                                </label>                        
+                            </span>
+                            <span class="hideFirst ifPostScroll">
+                                <span class="twoCol">
+                                    <h2>Scroll Height</h2>
+                                    <select name="scrollSize">
+                                        <option value="scroll">Standard</option>
+                                        <option value="shortScroll">Short</option>
+                                        <option value="tallScroll">Tall</option>
+                                    </select>
+                                </span>
+                            </span>
+                        </span>
+                        <h2>Details</h2>
+                        <div class="twoCol">
+                            <input type="text" id="postTitle" name="postTitle" placeholder="Title (optional)" />
+                            <input type="text" id="postTag" name="postTag" placeholder="Notes / Tag (optional)" />
+                        </div>
+                        <h2>Post Content</h2>
+                        <textarea id="postText" name="postText"></textarea>
+                    </div>
+
+                    <!-- Tabbed Template -->
+                    <div class="hideFirst typeSwitch ifTab">
+                        <hr>
+                        <span>
+                            <h2>Template Size</h2>
+                            <select name="tempSize">
+                                <option value="">Standard</option>
+                                <option value="xsmall">Extra Small</option>
+                                <option value="small">Small</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">Extra Large</option>
+                            </select>
+                        </span>
+                        <span class="twoCol fullWidth">
+                            <h2 class="fullWidth">Scrolling?</h2>
+                            <span class="twoCol">
+                                <label for="tabscY">
+                                    <input type="radio" id="tabscY" name="tabsc" value="y" />
+                                    <div><div></div></div>
+                                    Yes
+                                </label>
+                                <label for="tabscN">
+                                    <input type="radio" id="tabscN" name="tabsc" value="n" />
+                                    <div><div></div></div>
+                                    No
+                                </label>                        
+                            </span>
+                            <span class="hideFirst ifTabScroll">
+                                <span class="twoCol">
+                                    <h2>Scroll Height</h2>
+                                    <select name="scrollSize">
+                                        <option value="scroll">Standard</option>
+                                        <option value="shortScroll">Short</option>
+                                        <option value="tallScroll">Tall</option>
+                                    </select>
+                                </span>
+                            </span>
+                        </span>
+                        <h2>Details</h2>
+                        <div class="twoCol">
+                            <input type="text" id="tabsTitle" name="tabsTitle" placeholder="Title (optional)" />
+                            <input type="text" id="tabsNotes" name="tabsNotes" placeholder="Notes / Tag (optional)" />
+                        </div>
+                        <span class="twoCol">
+                            <h2>Number of Tabs</h2>
+                            <input type="number" id="tabCount" name="tabCount" value="1" />
+                        </span>                     
+                        <h2 class="fullWidth" style="margin-top: 20px;">Tabs</h2>
+                        <div class="tabContents"></div>
+                    </div>
+
+                    <!-- Wanted -->
+                    <div class="hideFirst typeSwitch ifWant">
+                        <hr>
+                        <span>
+                            <h2>Template Size</h2>
+                            <select name="tempSize">
+                                <option value="">Standard</option>
+                                <option value="xsmall">Extra Small</option>
+                                <option value="small">Small</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">Extra Large</option>
+                            </select>
+                        </span>
+                        <h2>Details</h2>
+                        <div class="twoCol">
+                            <input type="text" id="wantTitle" name="wantTitle" placeholder="Title (optional)" />
+                            <input type="text" id="wantNotes" name="wantNotes" placeholder="Notes / Tag (optional)" />
+                        </div>
+                        <span class="twoCol">
+                            <h2>Number of Sections</h2>
+                            <input type="number" id="charCount" name="charCount" value="1" />    
+                        </span>                    
+                        <h2 class="fullWidth" style="margin-top: 20px;">Sections</h2>
+                        <div class="wantContents"></div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="hideFirst typeSwitch ifPhone">
+                        <hr>
+                        <div class="twoCol">
+                            <h2 class="fullWidth">Method</h2>
+                            <span class="twoCol fullWidth">
+                                <label for="text">
+                                    <input type="radio" id="text" name="phoneType" value="text" />
+                                    <div><div></div></div>
+                                    Text Message
+                                </label>
+                                <label for="call">
+                                    <input type="radio" id="call" name="phoneType" value="call" />
+                                    <div><div></div></div>
+                                    Phone Call
+                                </label>                        
+                            </span>
+                            <h2 style="margin-top: 20px">Time</h2>
+                            <input type="text" id="phoneTime" name="phoneTime" placeholder="The time you want for the message/call" style="margin-top: 20px" />
+                            <h2>Image</h2>
+                            <input type="text" id="phoneImg" name="phoneImg" />
+                            <h2>Tag</h2>
+                            <input type="text" id="phoneTag" name="phoneTag" />
+                            <span class="twoCol fullWidth">
+                                <h2>Number of Messages</h2>
+                                <input type="number" id="msgCount" name="msgCount" value="1" />     
+                            </span>                   
+                            <h2 class="fullWidth" style="margin-top: 20px;">Messages</h2>
+                            <div class="msgContents fullWidth altCol"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tindr -->
+                    <div class="hideFirst typeSwitch ifTindr">
+                        <hr>
+                        <h2 class="fullWidth" style="margin-top: 20px;">Tindr Type</h2>
+                        <span class="threeCol fullWidth" style="margin-top: 0;">
+                            <label for="tinP">
+                                <input type="radio" id="tinP" name="tinType" value="tinP" />
+                                <div><div></div></div>
+                                Profile
+                            </label>
+                            <label for="tinM">
+                                <input type="radio" id="tinM" name="tinType" value="tinM" />
+                                <div><div></div></div>
+                                Message
+                            </label>    
+                            <label for="tinO">
+                                <input type="radio" id="tinO" name="tinType" value="tinO" />
+                                <div><div></div></div>
+                                Match/Swipe
+                            </label>
+                        </span>
+                        <div class="hideFirst ifTinP">
+                            <span class="twoCol">
+                                <input type="text" id="tinPImg" name="tinPImg" placeholder="Image URL" />
+                                <input type="text" id="tinPName" name="tinPName" placeholder="Name" />
+                                <input type="text" id="tinPAge" name="tinPAge" placeholder="Age (Numbers)" style="margin-top: 20px;" />
+                                <input type="text" id="tinPJob" name="tinPJob" placeholder="Occupation" style="margin-top: 20px;" />
+                            </span>
+                            <textarea id="tinPBio" placeholder="Biography"></textarea>
+                        </div>
+                        <div class="hideFirst ifTinM">
+                            <span class="twoCol">
+                                <input type="text" id="tinMImg" name="tinMImg" placeholder="Image URL" />
+                                <input type="text" id="tinMName" name="tinMName" placeholder="Name" />
+                            </span>
+                            <textarea id="tinMMsg" placeholder="Message"></textarea>
+                        </div>
+                        <div class="hideFirst ifTinO">
+                            <input type="text" id="tinOURL" name="tinOURL" placeholder="Tindr Profile URL" />
+                            <input type="text" id="tinOMsg" name="tinOMsg" placeholder="Matched! / Swiped Left! / Etc" style="margin-top: 20px;" />
+                        </div>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="hideFirst typeSwitch ifInsta">
+                        <hr>
+                        <h2 class="fullWidth" style="margin-top: 20px;">Instagram Type</h2>
+                        <span class="threeCol fullWidth" style="margin-top: 0;">
+                            <label for="igP">
+                                <input type="radio" id="igP" name="igType" value="igP" />
+                                <div><div></div></div>
+                                Profile
+                            </label>
+                            <label for="igNP">
+                                <input type="radio" id="igNP" name="igType" value="igNP" />
+                                <div><div></div></div>
+                                Post
+                            </label>    
+                            <label for="igC">
+                                <input type="radio" id="igC" name="igType" value="igC" />
+                                <div><div></div></div>
+                                Comment
+                            </label>
+                        </span>
+                        <div class="hideFirst ifIGP">
+                            <span class="twoCol">
+                                <input type="text" id="igPImg" name="igPImg" placeholder="Account Image URL" />
+                                <input type="text" id="igPName" name="igPName" placeholder="@Handle" />
+                            </span>
+                            <span class="threeCol">
+                                <input type="number" id="igPPosts" name="igPPosts" placeholder="Posts" />
+                                <input type="number" id="igPFollowers" name="igPFollowers" placeholder="Followers" />
+                                <input type="number" id="igPFollowing" name="igPFollowing" placeholder="Following" />
+                            </span>
+                            <textarea id="igPBio" placeholder="Biography"></textarea>
+                            <span class="threeCol">
+                                <input type="text" id="igPI0" name="igPI0" placeholder="Image 1 URL" />
+                                <input type="text" id="igPI1" name="igPI1" placeholder="Image 2 URL" />
+                                <input type="text" id="igPI2" name="igPI2" placeholder="Image 3 URL" />
+                                <input type="text" id="igPI3" name="igPI3" placeholder="Image 4 URL" style="margin-top: 20px;" />
+                                <input type="text" id="igPI4" name="igPI4" placeholder="Image 5 URL" style="margin-top: 20px;" />
+                                <input type="text" id="igPI5" name="igPI5" placeholder="Image 6 URL" style="margin-top: 20px;" />
+                                <input type="text" id="igPI6" name="igPI6" placeholder="Image 7 URL" style="margin-top: 20px;" />
+                                <input type="text" id="igPI7" name="igPI7" placeholder="Image 8 URL" style="margin-top: 20px;" />
+                                <input type="text" id="igPI8" name="igPI8" placeholder="Image 9 URL" style="margin-top: 20px;" />
+                            </span>
+                        </div>
+                        <div class="hideFirst ifIGNP">
+                            <span class="threeCol">
+                                <input type="text" id="igNPImg" name="tinMImg" placeholder="Image URL" />
+                                <input type="text" id="igNPLike" name="igNPLike" placeholder="Liked by names" />
+                                <input type="text" id="igNPLikeNum" name="igNPLikeNum" placeholder="'00 others' number" />
+                            </span>
+                            <span class="twoCol">
+                                <h2>Number of Comments</h2>
+                                <input type="number" id="commCount" name="commCount" value="1" /> 
+                            </span>                       
+                            <h2 class="fullWidth" style="margin-top: 20px;">Comments</h2>
+                            <div class="igComments fullWidth altCol"></div>
+                        </div>
+                        <div class="hideFirst ifIGC">
+                            <input type="text" id="igCName" name="igCName" placeholder="Commenter Name" />
+                            <input type="text" id="igCText" name="igCText" placeholder="Comment" style="margin-top: 20px;" />
+                        </div>
+                    </div>
+
+                    <!-- Timeline Template -->
+                    <div class="hideFirst typeSwitch ifTime">
+                        <hr>
+                        <h2>Template Size</h2>
+                        <select name="tempSize">
+                            <option value="">Standard</option>
+                            <option value="xsmall">Extra Small</option>
+                            <option value="small">Small</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">Extra Large</option>
+                        </select>
+                        <h2 style="margin-top: 20px;">Details</h2>
+                        <div class="twoCol">
+                            <input type="text" id="timeTitle" name="timeTitle" placeholder="Title (optional)" />
+                            <input type="text" id="timeNotes" name="timeNotes" placeholder="Notes / Tag (optional)" />
+                        </div>
+                        <span class="twoCol">
+                            <h2>Number of Events</h2>
+                            <input type="number" name="eventCount" id="eventCount" value="1" />
+                        </span>
+                        <h2 class="fullWidth">Events</h2>
+                        <i class="fullWidth">(Will order by year and month)</i>
+                        <span class="timeline eventContent"></span>
+                    </div>
+
+                    <!-- Tracker Template -->
+                    <div class="hideFirst typeSwitch ifTrack">
+                        <hr>
+                        <h2>Template Size</h2>
+                        <select name="tempSize">
+                            <option value="">Standard</option>
+                            <option value="xsmall">Extra Small</option>
+                            <option value="small">Small</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">Extra Large</option>
+                        </select>
+                        <span class="twoCol fullWidth">
+                            <h2 class="fullWidth">Scrolling?</h2>
+                            <span class="twoCol">
+                                <label for="tscY">
+                                    <input type="radio" id="tscY" name="tsc" value="y" />
+                                    <div><div></div></div>
+                                    Yes
+                                </label>
+                                <label for="tscN">
+                                    <input type="radio" id="tscN" name="tsc" value="n" />
+                                    <div><div></div></div>
+                                    No
+                                </label>                        
+                            </span>
+                        </span>
+                        <h2>Details</h2>
+                        <div class="twoCol">
+                            <input type="text" id="trackTitle" name="trackTitle" placeholder="Title (optional)" />
+                            <input type="text" id="trackNotes" name="trackNotes" placeholder="Notes / Tag (optional)" />
+                        </div>
+                        <span class="twoCol">
+                            <h2>Number of Threads</h2>
+                            <input type="number" name="threadCount" id="threadCount" value="1" />
+                        </span>
+                        <h2>Threads</h2>
+                        <i class="fullWidth">(Will order by year and month)</i>
+                        <span class="tracker threadContent"></span>
+                    </div>
+
+                    <!-- Image Dev Template -->
+                    <div class="hideFirst typeSwitch ifImage">
+                        <hr>
+                        <span>
+                            <h2>Template Size</h2>
+                            <select name="tempSize">
+                                <option value="">Standard</option>
+                                <option value="xsmall">Extra Small</option>
+                                <option value="small">Small</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">Extra Large</option>
+                            </select>
+                        </span>
+                        <h2 style="margin-top: 20px;">Details</h2>
+                        <div class="twoCol">
+                            <input type="text" id="imgTitle" name="imgTitle" placeholder="Title (optional)" />
+                            <input type="text" id="imgNotes" name="imgNotes" placeholder="Notes / Tag (optional)" />
+                        </div>
+                        <h2>Number of Columns</h2>
+                        <span class="fiveCol">
+                            <label for="col1">
+                                <input type="radio" id="col1" name="cols" value="1" />
+                                <div><div></div></div>
+                                1
+                            </label> 
+                            <label for="col2">
+                                <input type="radio" id="col2" name="cols" value="twoCol" />
+                                <div><div></div></div>
+                                2
+                            </label>   
+                            <label for="col3">
+                                <input type="radio" id="col3" name="cols" value="threeCol" />
+                                <div><div></div></div>
+                                3
+                            </label>  
+                            <label for="col4">
+                                <input type="radio" id="col4" name="cols" value="fourCol" />
+                                <div><div></div></div>
+                                4
+                            </label>                     
+                        </span>
+                        <span class="twoCol">
+                            <h2>Number of Images</h2>
+                            <input type="number" name="imgCount" id="imgCount" value="1" />
+                        </span>
+                        <h2>Image URLs</h2>
+                        <div class="imgContent"></div>
+                    </div>
+
+                    <!-- Playlist Template -->
+                    <div class="hideFirst typeSwitch ifMusic">
+                        <hr>
+                        <h2>Time</h2>
+                        <input type="text" id="musicTime" name="musicTime" placeholder="The time you want for the message/call" />
+                        <h2 style="margin-top: 20px;">Image</h2>
+                        <input type="text" id="musicImg" name="musicImg" />
+                        <h2 style="margin-top: 20px;">Playlist URL</h2>
+                        <input type="text" id="musicLink" name="musicLink" />
+                        <h2 class="fullWidth" style="margin-top: 20px">Songs</h2>
+                        <span class="twoCol">
+                            <h2>Number of Songs</h2>
+                            <input type="number" name="songCount" id="songCount" value="1" />
+                        </span>
+                        <h2>Songs</h2>
+                        <span class="twoCol songList songContent"></span>
+                    </div>
+
+                    <!-- Quote Template -->
+                    <div class="hideFirst typeSwitch ifQuote">
+                        <hr>
+                        <span>
+                            <h2>Template Size</h2>
+                            <select name="tempSize">
+                                <option value="">Standard</option>
+                                <option value="xsmall">Extra Small</option>
+                                <option value="small">Small</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">Extra Large</option>
+                            </select>
+                        </span>
+                        <h2 style="margin-top: 20px;">Quote</h2>
+                        <textarea id="quoteBody" name="quoteBody"></textarea>
+                        <h2>Source</h2>
+                        <input type="text" name="quoteSource" id="quoteSource" placeholder="Source" />
+                    </div>
+
+                <!-- END FORM CONTENTS -->
+                </div>
+
+                <span>
+                    <button id="updateTemp">Generate</button>
+                    <button id="runScript">Run Script</button>
+                </span>
+            </section>
+            <section class="result">
+                <h3 id="tab1" class="active">Preview</h3>
+                <h3 id="tab2">Code</h3>
+                <div id="tab1-content" class="scroll active">
+                    <div id="display">Click 'generate' to see a preview.</div>
+                </div>
+                <div id="tab2-content" class="scroll">
+                    <selectCode>Click to Highlight</selectCode>
+                    <pre><code><div id="code"></div></code></pre>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

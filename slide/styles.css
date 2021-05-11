@@ -1,0 +1,150 @@
+.lux-slide-box {
+	position: relative;
+	margin: 0 auto;
+	width: 500px;
+	height: 450px;
+	overflow: hidden;
+	
+	--ltAccent: #a7a7a7;
+	--accent: #898989;
+	--dkAccent: #717171;
+}
+.lux-slide-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500px;
+	height: 450px;
+}
+.lux-slide-image img {
+	width: 250px;
+	height: 450px;
+	object-fit: cover;
+	transition: 1.5s;
+	float: left;
+}
+.lux-slide-image img.animate {
+	filter: blur(8px) grayscale(100%);
+	-webkit-filter: blur(8px) grayscale(100%);
+	transition: 0.75s;
+}
+.lux-slide-info {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 250px;
+	height: 450px;
+	background: #ffffff;
+}
+.lux-slide-lyrics {
+	position: absolute;
+	left: 30px;
+	top: 40px;
+	width: 190px;
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-size: var(--xlBody, var(--size-xl, 16px)); 
+	line-height: 18px;
+	color: var(--ltAccent);
+	text-align: center;
+	text-transform: lowercase;
+}
+.lux-slide-lyrics span {
+	display: block;
+	margin: 0 auto 30px;
+	font-size: 36px;
+	font-style: normal;
+	color: var(--dkAccent);
+}
+.lux-slide-tag {
+	position: absolute;
+	left: 20px;
+	bottom: 60px;
+	width: 210px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: var(--sBody, var(--size-s, 10px)); 
+	color: var(--accent);
+	text-align: left;
+}
+.lux-slide-tag a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: var(--sBody, var(--size-s, 10px)); 
+	color: var(--dkAccent);
+	letter-spacing: 0;
+	text-transform: lowercase;
+}
+.lux-slide-tag i {
+	margin-right: 10px;
+	color: var(--dkAccent);
+}
+.lux-slide-togPost {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 210px;
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-size: var(--lBody, var(--size-sl, 14px)); 
+	line-height: 20px;
+	color: var(--accent);
+	text-align: right;
+	cursor: pointer;
+}
+.lux-slide-togPost i {
+	font-size: var(--mBody, var(--size-m, 12px)); 
+	margin-left: 5px;
+	color: var(--dkAccent);
+}
+.lux-slide-post {
+	position: absolute;
+	left: -350px;
+	top: 0;
+	width: 350px;
+	height: 450px;
+	background: #ffffff;
+}
+.lux-slide-togInfo {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	width: 310px;
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-size: var(--lBody, var(--size-l, 14px)); 
+	line-height: 20px;
+	color: var(--dkAccent);
+	text-align: left;
+	cursor: pointer;
+}
+.lux-slide-togInfo i {
+	font-size: var(--mBody, var(--size-m, 12px)); 
+	margin-right: 5px;
+}
+.lux-slide-postBox {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 290px;
+	height: 350px;
+	font-family: 'montserrat', sans-serif;
+	font-size: var(--mBody, var(--size-m, 12px)); 
+	line-height: 16px;
+	color: #959595;
+	text-align: justify;
+}
+.lux-slide-postBox i {
+	color: var(--dkAccent);
+}
+.lux-slide-postBox b,
+.lux-slide-postBox a {
+	color: var(--dkAccent);
+}
+.lux-slide-postBox a {
+	font-size: var(--sBody, var(--size-s, 10px)); 
+}
+.lux-slide-postBoxIn {
+	width: calc(100% - 10px);
+	height: 350px;
+	padding-right: 10px;
+	overflow: auto;
+}

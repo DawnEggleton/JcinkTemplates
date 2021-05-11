@@ -1,0 +1,611 @@
+/***********************************************
+	Applications
+***********************************************/
+.lux-moments {
+	--accent: #869e9d;
+	--ltAccent: #abbebd;
+
+	color: #737373;
+}
+.lux-moments .inline-header {
+	box-sizing: border-box;
+	width: 272px;
+	height: 62px;
+	background: #ffffff;
+	border: 1px solid #d8d8d8;
+	padding: 5px;
+	margin: 0 auto 20px;
+}
+
+.lux-moments .inline-header span {
+	display: block;
+	box-sizing: border-box;
+	width: 260px;
+	height: 50px;
+	line-height: 50px;
+	background: var(--accent);
+	border: 1px solid #d8d8d8;
+	text-align: center;
+	font-family: 'oswald', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.lux-moments .app-container {
+	width: 450px;
+	margin: 0 auto;
+	position: relative;
+	transform: translateX(20px);
+}
+.lux-moments .app-header {
+	width: 100%;
+	height: 80px;
+}
+.lux-moments .app-name {
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+	font-family: 'oswald', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px 20px 0;
+	color: var(--accent);
+	line-height: normal;
+}
+.lux-moments .app-stats {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	padding: 0 10px;
+	background: var(--accent);
+	color: #ffffff;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: right;
+}
+.lux-moments .app-tabs {
+	position: absolute;
+	top: 90px;
+	left: -40px;
+}
+.lux-moments .app-tabs span {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: var(--ltAccent);
+	text-align: center;
+	line-height: 40px;
+	font-size: var(--xlBody, var(--size-xl, 16px));
+	color: #ffffff;
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-family: 'oswald', sans-serif;
+	font-weight: bold;
+}
+.lux-moments .app-tabs span:hover {
+	background: var(--accent);
+}
+.lux-moments .app-tabs span.mom-active {
+	background: var(--accent);
+}
+.lux-moments .app-content {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #ffffff;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--mBody, var(--size-m, 11px));
+	text-align: left;
+	display: none;
+	min-height: 240px;
+	max-height: 520px;
+	border: 1px solid #d8d8d8;
+	border-top: 0;
+	text-align: justify;
+	line-height: 16px;
+}
+.lux-moments .app-content blockquote {
+	margin: 5px 0 20px;
+	background: #fafafa;
+	border: 1px dashed #e2e2e2;
+	padding: 10px;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--sBody, var(--size-s, 10px));
+	color: #737373;
+	line-height: 16px;
+}
+.lux-moments .app-scroll {
+	overflow: auto;
+	padding-right: 10px;
+	max-height: 480px;
+}
+.lux-moments .shortAnswer .app-content {
+	min-height: 285px;
+}
+.lux-moments .app-content.mom-active {
+	display: block;
+}
+.lux-moments .app-col {
+	float: left;
+	width: calc(50% - 10px);
+	margin: 0 20px 20px 0;
+}
+.lux-moments .app-col:nth-child(even) {
+	margin-right: 0;
+}
+.lux-moments .app-clear {
+	clear: both;
+}
+.lux-moments .app-content h1.app-h1wide,
+.lux-moments .app-content h1 {
+	height: 30px;
+	line-height: 30px;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 0 10px;
+	background: var(--accent);
+	box-sizing: border-box;
+}
+.lux-moments .app-content h1.app-h1wide {
+	width: calc(100% + 40px);
+	margin: 0 -20px 20px -20px;
+}
+.lux-moments .app-content h1 {
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+.lux-moments .app-content h2 {
+	font-family: 'oswald', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: var(--accent);
+	margin: 0 0 20px 0;
+}
+.lux-moments .app-content h3 {
+	font-family: 'oswald', sans-serif;
+	font-size: var(--mBody, var(--size-m, 12px));
+	text-transform: uppercase;
+	color: var(--accent);
+	margin: 0 0 20px 0;
+	letter-spacing: 0.5px;
+	margin: 0 0 20px 0;
+}
+.lux-moments .app-content h4 {
+	padding: 2px 5px;
+	margin: 0 5px 5px 0;
+	background: var(--accent);
+	color: #ffffff;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	text-transform: uppercase;
+	width: max-content;
+}
+.lux-moments .app-content h5 {
+	padding: 5px 10px;
+	margin: 0 5px 5px 0;
+	background: var(--accent);
+	color: #ffffff;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	text-transform: uppercase;
+	width: max-content;
+	max-width: 200px;
+	text-align: justify;
+}
+.lux-moments .app-content b,
+.lux-moments .app-content i {
+	color: var(--accent);
+}
+.lux-moments .app-content a {
+	padding: 2px 5px;
+	background: var(--ltAccent);
+	color: #ffffff;
+	font-size: var(--sBody, var(--size-s, 10px));
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.lux-moments .app-content a:hover {
+	background: var(--accent);
+}
+
+
+.lux-moments .lux-app {
+	padding: 0 20px;
+	margin: 20px 0 40px 0;
+	line-height: 20px;
+}
+.lux-moments .lux-app p {
+	margin-top: 20px;
+}
+.lux-moments .lux-app p:first-child {
+	margin-top: 0;
+}
+.lux-moments .lux-app p:first-letter {
+	font-family: 'oswald', sans-serif;
+	font-size: 40px;
+	float: left;
+	padding: 5px 5px 0 20px;
+	font-weight: bold;
+	color: var(--accent);
+}
+.lux-moments .lux-app2{
+	padding: 0 20px;
+	line-height: 20px;
+}
+
+/***********************************************
+	Templates
+***********************************************/
+.lux-moments .temp-container {
+	margin: 0 auto;
+	position: relative;
+}
+.lux-moments .temp-container-tabbed {
+	margin: 0 auto;
+	position: relative;
+	transform: translateX(20px);
+}
+.lux-moments .temp-header {
+	width: 100%;
+	height: 80px;
+}
+.lux-moments .temp-title {
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+	font-family: 'oswald', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px 20px 0;
+	color: var(--accent);
+	line-height: normal;
+}
+.lux-moments .temp-subtitle {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	padding: 0 10px;
+	background: var(--accent);
+	color: #ffffff;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: right;
+}
+.lux-moments .temp-interHeader {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	padding: 0 10px;
+	background: var(--accent);
+	color: #ffffff;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: left;
+	position: relative;
+}
+.lux-moments .temp-tabs {
+	position: absolute;
+	top: 90px;
+	left: -40px;
+}
+.lux-moments .temp-tabs span {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: var(--ltAccent);
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-size: 0;
+	counter-increment: tabCount;
+}
+.temp-tabs span:before {
+	content: counter(tabCount, lower-roman) '. ';
+	font-family: 'oswald', sans-serif;
+	font-weight: bold;
+	font-size: var(--xlBody, var(--size-xl, 16px));
+	color: #ffffff;
+}
+.lux-moments .temp-tabs span:hover {
+	background: var(--accent);
+}
+.lux-moments .temp-tabs span.mom-active {
+	background: var(--accent);
+}
+.lux-moments .temp-content {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #ffffff;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--mBody, var(--size-m, 11px));
+	text-align: left;
+	min-height: 240px;
+	max-height: 520px;
+	border: 1px solid #d8d8d8;
+	border-top: 0;
+	text-align: justify;
+	line-height: 16px;
+	height: auto;
+}
+.lux-moments .temp-claim {
+	text-align: left;
+}
+.lux-moments .temp-container-tabbed .temp-content {
+	display: none;
+}
+.lux-moments .temp-container-tabbed .temp-content.mom-active {
+	display: block;
+}
+.lux-moments .temp-col {
+	float: left;
+	width: calc(50% - 10px);
+	margin: 0 20px 20px 0;
+}
+.lux-moments .temp-cred .temp-col {
+	float: left;
+	width: calc(50% - 10px);
+	margin: 0 20px 0 0;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+}
+.lux-moments .temp-col:nth-child(even) {
+	margin-right: 0;
+}
+.lux-moments .temp-cred .temp-col:nth-child(even) {
+	padding: 0 10px 0 0;
+	box-sizing: border-box;
+	text-align: right;
+}
+.lux-moments .temp-clear {
+	clear: both;
+}
+.lux-moments .temp-ml .temp-clear {
+	clear: both;
+	width: calc(100% - 20px);
+	height: 15px;
+	border-bottom: 1px solid #eaeaea;
+	margin: 0 10px 25px;
+}
+.lux-moments .temp-ml .temp-content .temp-clear:last-child {
+	border: none;
+	height: 0;
+}
+.lux-moments .temp-cred .temp-clear {
+	height: 20px;
+}
+.lux-moments .temp-content h1.temp-h1wide,
+.lux-moments .temp-content h1 {
+	height: 30px;
+	line-height: 30px;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 0 10px;
+	background: var(--accent);
+	box-sizing: border-box;
+}
+.lux-moments .temp-content h1.temp-h1wide {
+	width: calc(100% + 40px);
+	margin: 0 -20px 20px -20px;
+}
+.lux-moments .temp-content h1 {
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+.lux-moments .temp-content h2 {
+	font-family: 'oswald', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: var(--accent);
+	margin: 0 0 20px 0;
+}
+.lux-moments .temp-content h3 {
+	font-family: 'oswald', sans-serif;
+	font-size: var(--mBody, var(--size-m, 12px));
+	text-transform: uppercase;
+	color: var(--accent);
+	margin: 0 0 20px 0;
+	letter-spacing: 0.5px;
+	margin: 0 0 20px 0;
+}
+.lux-moments .temp-content h4 {
+	padding: 2px 5px;
+	margin: 0 5px 5px 0;
+	background: var(--accent);
+	color: #ffffff;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	text-transform: uppercase;
+	width: max-content;
+}
+.lux-moments .temp-content b,
+.lux-moments .temp-content i {
+	color: var(--accent);
+}
+.lux-moments .temp-cred .temp-content b {
+	font-size: var(--sBody, var(--size-xss, 9px));
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.lux-moments .temp-content a {
+	padding: 2px 5px;
+	background: var(--ltAccent);
+	color: #ffffff;
+	font-size: var(--sBody, var(--size-s, 10px));
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.lux-moments .temp-content a:hover {
+	background: var(--accent);
+}
+.lux-moments .temp-interHeader a {
+	position: absolute;
+	left: 0px;
+	top: -125px;
+}
+.lux-moments .temp-claim a {
+	color: #737373;
+	background: transparent !important;
+	padding: 0;
+}
+.lux-moments .temp-claim a:hover {
+	background: transparent;
+}
+
+.lux-moments .temp-cred .temp-credIn a {
+	background: transparent;
+	padding: 0;
+	font-size: var(--sBody, var(--size-xss, 9px));
+	margin: 0;
+}
+.lux-moments .temp-cred .temp-credIn a:hover {
+	background: transparent;
+}
+
+
+
+.lux-moments .temp-l {
+	width: 450px;
+}
+.lux-moments .temp-l .temp-content {
+	max-height: none;
+	min-height: 0;
+	height: auto;
+}
+.lux-moments .temp-l .temp-scroll {
+	max-height: 350px;
+	overflow: auto;
+	padding-right: 10px;
+}
+
+.lux-moments .temp-m {
+	width: 350px;
+}
+.lux-moments .temp-m .temp-content {
+	max-height: none;
+	min-height: 0;
+	height: auto;
+}
+.lux-moments .temp-m .temp-scroll {
+	max-height: 250px;
+	overflow: auto;
+}
+
+.lux-moments .temp-s {
+	width: 250px;
+}
+.lux-moments .temp-s .temp-content {
+	max-height: none;
+	min-height: 0;
+	height: auto;
+}
+.lux-moments .temp-s .temp-scroll {
+	max-height: 170px;
+	overflow: auto;
+}
+.lux-moments .temp-content blockquote {
+	margin: 5px 0 20px;
+	background: #fafafa;
+	border: 1px dashed #e2e2e2;
+	padding: 10px;
+	font-family: 'Karla', sans-serif;
+	font-size: var(--sBody, var(--size-s, 10px));
+	color: #737373;
+	line-height: 16px;
+}
+.lux-moments .imgSide {
+width: 150px;
+margin-right: 20px !important;
+}
+.lux-moments .imgSide img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+}
+.lux-moments .contentSide {
+width: calc(100% - 170px);
+margin-right: 0 !important;
+}
+.lux-moments .contentSide blockquote {
+max-height: 150px;
+box-sizing: border-box;
+overflow: auto;
+margin: 0;
+}
+
+.lux-moments .temp-timeline {
+width: 50%;
+position: relative;
+border: 0;
+border-right: 5px solid;
+}
+.lux-moments .temp-timeline:nth-child(2n) {
+border-right: 0;
+border-left: 5px solid;
+margin-left: 50%;
+} 
+.lux-moments .time-dot{
+width: 61px;
+height: 61px;
+border-radius: 41px;
+color: #ffffff;
+font-family: 'oswald', sans-serif;
+font-size: 20px;
+text-align: center;
+line-height: 61px;
+z-index: 2;
+position: absolute;
+top: 0;
+left: 0;
+}
+.lux-moments .temp-timeline:nth-child(2n) .time-dot {
+left: auto;
+right: 0;
+}
+.lux-moments .time-line {
+width: 100%;
+height: 1px;
+position: absolute;
+left: 0;
+top: 30px;
+}
+.lux-moments .time-content {
+padding: 71px 10px 10px 10px;
+}
+.lux-moments .temp-timeline,
+.lux-moments .temp-timeline:nth-child(2n) {
+border-color: var(--ltAccent);
+}
+.lux-moments .time-dot,
+.lux-moments .time-line,
+.lux-moments .temp-timeline h1,
+.lux-moments .temp-timeline h4,
+.lux-moments .temp-timeline h5 {
+background: var(--ltAccent);
+}
+.lux-moments .temp-timeline h2,
+.lux-moments .temp-timeline h3,
+.lux-moments .temp-timeline b {
+color: var(--ltAccent);
+}

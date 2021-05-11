@@ -1,0 +1,224 @@
+/*basics*/
+.lux-temp1-container {
+	--accent: #b7cad8;
+}
+.lux-temp1-titlebox {
+	width: 100%; 
+	height: 200px; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	padding: 20px; 
+	box-sizing: border-box;
+}
+.lux-temp1-title {
+	font-family: 'Barlow', sans-serif; 
+	font-weight: 900; 
+	font-size: var(--mBody, var(--size-m, 12px));
+	text-transform: uppercase;
+	line-height: 18px;
+}
+.lux-temp1-title span {
+	display: block; 
+	font-weight: 400; 
+	margin: 0 0 -5px 0;
+	counter-increment: tabCounts;
+}
+.lux-temp1-title span:before {
+	content: '0' counter(tabCounts, decimal-leading-zero);
+}
+.lux-temp1-title span.link, .lux-temp1-title span a {
+	font-size: var(--sBody, var(--size-xss, 9px));
+}
+.lux-temp1-contentbox {
+	position: relative; 
+	width: 100%; 
+	height: calc(100% - 200px); 
+	padding: 40px 30px; 
+	box-sizing: border-box; 
+}
+.lux-temp1-content {
+	font-family: 'Barlow', sans-serif; 
+	font-weight: 400; 
+	font-size: var(--mBody, var(--size-m, 12px));
+	line-height: 160%; 
+	text-align: justify; 
+	height: 100%; 
+	overflow: auto; 
+	padding: 0 10px; 
+	box-sizing: border-box;
+}
+.lux-temp1-content a {
+	font-size: var(--sBody, var(--size-xss, 9px));
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.lux-temp1-content .code-top {
+	width: 360px;
+	margin-bottom: -1px;
+}
+.lux-temp1-content .code-scroll {
+	width: 295px;
+	max-height: 120px;
+}
+.lux-temp1-content:after {
+content: "";
+clear: both;
+}
+.lux-temp1-content img {
+float: left;
+}
+.lux-temp1-content.one-wide img {
+width: 100%;
+margin: 0 0 10px 0;
+}
+.lux-temp1-content.two-wide img {
+width: calc(50% - 5px);
+margin: 0 5px 5px 0;
+}
+.lux-temp1-content.two-wide img:nth-child(2n) {
+margin-right: 0;
+}
+.lux-temp1-content.three-wide img {
+width: calc((100%/3) - 5px);
+margin: 0 5px 5px 0;
+}
+.lux-temp1-content.three-wide img:nth-child(3n) {
+margin-right: 0;
+}
+.lux-temp1-content.four-wide img {
+width: calc(25% - 5px);
+margin: 0 5px 5px 0;
+}
+
+.lux-temp1-content h1 {
+	font-weight: 900;
+	font-size: var(--mBody, var(--size-m, 12px));
+	text-transform: uppercase;
+	color: #000000;
+	display: block;
+	margin: 0;
+	padding: 5px 20px;
+	border-bottom: 1px solid #787878;
+	width: 80%;
+	letter-spacing: 0.5px;
+}
+
+.lux-temp1-left {
+	width: 50px; 
+	height: 400px; 
+	position: absolute; 
+	left: 0; 
+	bottom: 0; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	font-size: 30px; 
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+.lux-temp1-right {
+	width: 50px; 
+	height: 400px; 
+	position: absolute; 
+	right: 0; 
+	bottom: 0; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	font-size: 30px; 
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+.lux-med .lux-temp1-left,
+.lux-med .lux-temp1-right {
+	height: 300px; 
+	width: 30px;
+}
+
+/*tabbed only*/
+.lux-tabbed .lux-temp1-content {
+	display: none;
+}
+.lux-tabbed .lux-temp1-title {
+	display: none;
+}
+.lux-tabbed .lux-active {
+	display: block;
+}
+
+/*sizing*/
+.lux-temp1-container {
+	margin: 0 auto;
+}
+.lux-lrg {
+	width: 500px;
+	height: 600px;
+}
+.lux-lrg .lux-temp1-contentbox {
+	padding: 60px 50px;
+}
+.lux-med {
+	width: 400px; 
+	height: 500px;
+}
+.lux-ml {
+	width: 300px; 
+	height: 400px;
+}
+.lux-ml .lux-temp1-titlebox {
+	height: 150px;
+}
+.lux-ml .lux-temp1-contentbox {
+	height: calc(100% - 150px);
+}
+
+/*colors*/
+.lux-temp1-titlebox {
+	background: var(--accent); 
+}
+.lux-temp1-title {
+	color: #ffffff; 
+}
+.lux-temp1-contentbox {
+	background: #ffffff; 
+}
+.lux-temp1-content {
+	color: #787878; 
+}
+.lux-temp1-content b,
+.lux-temp1-content i, 
+.lux-temp1-content a,
+.lux-temp1-content h1 {
+	color: #000000;
+}
+
+.lux-temp1-content h1 {
+	border-color: #787878;
+}
+.lux-temp1-left, .lux-temp1-right {
+	color: var(--accent); 
+}
+.lux-temp1-left:hover,.lux-temp1-right:hover {
+	color: #787878;
+}
+
+/*scrollbar, chrome*/
+#scroll::-webkit-scrollbar {
+  width: 6px;
+}
+#scroll::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+#scroll::-webkit-scrollbar-thumb {
+  background: #787878; 
+}
+#scroll::-webkit-scrollbar-thumb:hover {
+  background: #888888; 
+}
+
+/*scrollbar, firefox*/
+.lux-temp1-content {
+scrollbar-color: #787878 #ffffff;
+scrollbar-width: thin;
+}

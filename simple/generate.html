@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Template Generator</title>
+        <link rel="stylesheet" href="../generator/generator.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
+        <script src="../../scripts/jquery-1.12.1.min.js"></script>
+        <script defer src="../generator/staticGen.js"></script>
+        <link rel="stylesheet" href="../generator/spectrum.css" />
+        <script src="../generator/spectrum.js"></script>
+
+        <!-- Template Specific -->
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><script defer src="scripts.js"></script>
+
+        <script defer src="flexGen.js"></script>
+    </head>
+    <body id="generate">
+        <header>
+            <h1>Simple Template</h1>
+            <p>Use the form to the left and hit 'generate' to produce a sample and the associated code! Please note that to test script-based functions, you must first press 'generate' and then press 'run script'.</p>
+            <a href="../generator/generator.html"><i class="fas fa-angle-left"></i> Back</a>
+        </header>
+        <main>
+            <section class="form">
+                <div class="scroll">
+
+                    <!-- START FORM CONTENTS -->
+
+                    <!-- Template Type -->
+                    <h2>Template Type</h2>
+                    <div class="tempType">
+                        <label for="posting">
+                            <input type="radio" id="posting" name="type" value="posting" />
+                            <div><div></div></div>
+                            Posting
+                        </label>
+                        <label for="tabbed">
+                            <input type="radio" id="tabbed" name="type" value="tabbed" />
+                            <div><div></div></div>
+                            Tabbed
+                        </label>
+                    </div>
+
+                    <!-- Coloring -->
+                    <div class="twoCol">
+                        <span>
+                            <h2>Template Size</h2>
+                            <select name="tempSize">
+                                <option value="med">Standard</option>
+                                <option value="sml">Small</option>
+                                <option value="lrg">Large</option>
+                            </select>
+                        </span>   
+                        <span>
+                            <h2 class="fullWidth">Coloring</h2>
+                            <span class="threeCol fullWidth" style="margin-top: 0;">
+                                <label for="ccY">
+                                    <input type="radio" id="ccY" name="tc" value="y" />
+                                    <div><div></div></div>
+                                    Custom
+                                </label>    
+                                <label for="ccD">
+                                    <input type="radio" id="ccD" name="tc" value="default" />
+                                    <div><div></div></div>
+                                    Default
+                                </label>                        
+                            </span>
+                        </span>
+                    </div>
+                    <div class="hideFirst ifCustomCol" style="margin-top: 0;">
+                        <div class="twoCol">
+                            <span>
+                                <h2>Character</h2>
+                                <input type="text" id="char" name="char" placeholder="First name only." /> 
+                            </span>
+                            <span>
+                                <h2>Main Accent</h2>
+                                <input type="color" id="accent" name="accent" />
+                            </span>              
+                        </div>
+                    </div>
+
+                    <!-- Post Header -->
+                    <div class="twoCol">
+                        <h2 class="fullWidth">Large Header?</h2>
+                        <span class="twoCol">
+                            <label for="lhY">
+                                <input type="radio" id="lhY" name="lh" value="y" />
+                                <div><div></div></div>
+                                Yes
+                            </label>
+                            <label for="lhN">
+                                <input type="radio" id="lhN" name="lh" value="n" />
+                                <div><div></div></div>
+                                No
+                            </label>                        
+                        </span>
+                        <input type="text" id="lhText" name="lhText" class="ifLH hideFirst" />
+                    </div>
+
+                    <!-- Post Subheader -->
+                    <div class="twoCol">
+                        <h2 class="fullWidth">Small Header?</h2>
+                        <span class="twoCol">
+                            <label for="shY">
+                                <input type="radio" id="shY" name="sh" value="y" />
+                                <div><div></div></div>
+                                Yes
+                            </label>
+                            <label for="shN">
+                                <input type="radio" id="shN" name="sh" value="n" />
+                                <div><div></div></div>
+                                No
+                            </label>                        
+                        </span>
+                        <input type="text" id="shText" name="shText" class="ifSH hideFirst" />
+                    </div>
+
+                    <!-- Posting Template -->
+                    <div class="hideFirst typeSwitch ifPost">
+                        <hr>
+                        <h2>Post Content</h2>
+                        <textarea id="postText" name="postText"></textarea>
+                    </div>
+
+                    <!-- Infinite Tabs -->
+                    <div class="hideFirst typeSwitch ifTabbed">
+                        <hr>
+                        <span class="twoCol">
+                            <h2>Tab Count</h2>
+                            <input type="number" id="tabCount" name="tabCount" value="1" />     
+                        </span>                   
+                        <h2 class="fullWidth">Tabs</h2>
+                        <div class="tabContents"></div>
+                    </div>
+
+                    <!-- END FORM CONTENTS -->
+                </div>
+
+                <span>
+                    <button id="updateTemp">Generate</button>
+                    <button id="runScript">Run Script</button>
+                </span>
+            </section>
+            <section class="result">
+                <h3 id="tab1" class="active">Preview</h3>
+                <h3 id="tab2">Code</h3>
+                <div id="tab1-content" class="scroll active">
+                    <div id="display">Click 'generate' to see a preview.</div>
+                </div>
+                <div id="tab2-content" class="scroll">
+                    <selectCode>Click to Highlight</selectCode>
+                    <pre><code><div id="code"></div></code></pre>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

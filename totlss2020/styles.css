@@ -1,0 +1,130 @@
+.ss20-wrap {    
+    margin: 20px auto;
+    width: var(--tempWidth, 500px);
+    border: 1px solid var(--outerBorder, #eee);
+    padding: 20px;
+    box-sizing: border-box;
+    color: var(--fontColor, #555);
+    background: var(--largeBorder, transparent);
+  }
+  .ss20-wrap h1,
+  .ss20-wrap h2,
+  .ss20-wrap h3 {
+    font-family: var(--accentFont);
+    color: var(--darkAccent, rgba(138, 81, 138, 1));
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+  }
+  .ss20-wrap h1 {
+    font-size: calc(var(--fontSize, 12px) * 2.5);
+  }
+  .ss20-wrap h2 {
+    font-size: calc(var(--fontSize, 12px) * 2);
+  }
+  .ss20-wrap h3 {
+    font-size: calc(var(--fontSize, 12px) * 1.5);
+  }
+  .ss20-wrap b,
+  .ss20-wrap i {
+    color: var(--darkAccent, rgba(138, 81, 138, 1));
+  }
+  .ss20-wrap b {
+    font-weight: 600;
+    font-size: calc(var(--fontSize, 12px) + 2px);
+  }
+  .ss20-wrap i {
+    font-weight: 500;
+  }
+  .ss20-wrap a {
+    color: var(--linkColor, rgba(138, 81, 138, 1));
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .ss20-top {
+    position: relative;
+    border: 1px solid var(--innerBorder, #ddd);
+    height: 150px;
+    font-family: var(--accentFont, 'Roboto Condensed'), sans-serif;
+    font-size: calc(var(--fontSize, 12px) - 2px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--bgColor, #fff);
+  }
+  .ss20-top img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(35px 0%, 100% 0, 100% 100%, 0 100%, 0% 35px);
+    object-fit: cover;
+  }
+  .ss20-body {
+    border-left: 1px solid var(--innerBorder, #ddd);
+    border-right: 1px solid var(--innerBorder, #ddd);
+    font-size: var(--fontSize, 12px);
+    font-family: var(--bodyFont, 'Montserrat'), sans-serif;
+    padding: calc(var(--bodyPadding, 30px) - 5px) var(--bodyPadding, 30px) 0;
+    text-align: justify;
+    line-height: 200%;
+    background: var(--bgColor, #fff);
+  }
+  .scroll .ss20-post {
+    max-height: 300px;
+    overflow: auto;
+    padding: 0 15px 0 5px;
+    scrollbar-color: var(--accent, #000) transparent;
+    scrollbar-width: thin;
+  }
+  .ss20-foot {
+    position: relative;
+    border: 1px solid var(--innerBorder, #ddd);
+    border-top: 0;
+    min-height: 50px;
+    font-family: var(--accentFont, 'Roboto Condensed'), sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--bgColor, #fff);
+  }
+  .ss20-top:before,
+  .ss20-top:after,
+  .ss20-foot:before,
+  .ss20-foot:after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    background: var(--accent, #000);
+    transform: skew(-45deg);
+  }
+  .ss20-top:before {
+    top: 0;
+    left: 0;
+    width: 10px;
+    background: var(--darkAccent, rgba(138, 81, 138, 1));
+  }
+  .ss20-top:after {
+    top: -7px;
+    left: -7px;
+    width: 5px;
+    background: var(--lightAccent, rgba(138, 81, 138, 0.5));
+  }
+  .ss20-foot:before {
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    background: var(--darkAccent, rgba(138, 81, 138, 1));
+  }
+  .ss20-foot:after {
+    bottom: -7px;
+    right: -7px;
+    width: 5px;
+    background: var(--lightAccent, rgba(138, 81, 138, 0.5));
+  }

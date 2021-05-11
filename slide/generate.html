@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slide Generator</title>
+        <link rel="stylesheet" href="../generator/generator.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
+        <script src="../../scripts/jquery-1.12.1.min.js"></script>
+        <script defer src="../generator/staticGen.js"></script>
+        <link rel="stylesheet" href="../generator/spectrum.css" />
+        <script src="../generator/spectrum.js"></script>
+
+        <!-- Template Specific -->
+        <link href="//fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap" rel="stylesheet"><link href="//fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><script defer src="scripts.js"></script>
+
+        <script defer src="flexGen.js"></script>
+    </head>
+    <body id="generate">
+        <header>
+            <h1>Slide Posting Template</h1>
+            <p>Use the form to the left and hit 'generate' to produce a sample and the associated code! Please note that to test script-based functions, you must first press 'generate' and then press 'run script'.</p>
+            <a href="../generator/generator.html"><i class="fas fa-angle-left"></i> Back</a>
+        </header>
+        <main>
+            <section class="form">
+                <div class="scroll">
+
+                    <!-- START FORM CONTENTS -->
+
+                    <!-- Coloring -->
+                    <div class="twoCol">
+                        <h2 class="fullWidth">Coloring</h2>
+                        <span class="threeCol fullWidth" style="margin-top: 0;">
+                            <label for="ccY">
+                                <input type="radio" id="ccY" name="tc" value="y" />
+                                <div><div></div></div>
+                                Custom
+                            </label>    
+                            <label for="ccD">
+                                <input type="radio" id="ccD" name="tc" value="default" />
+                                <div><div></div></div>
+                                Default
+                            </label>                        
+                        </span>
+                    </div>
+                    <div class="hideFirst ifCustomCol" style="margin-top: 0;">
+                        <h2>Character</h2>
+                        <input type="text" id="char" name="char" placeholder="First name only." /> 
+                        <div class="threeCol">
+                            <span>
+                                <h2>Light Accent</h2>
+                                <input type="color" id="ltAccent" name="ltAccent" />  
+                            </span> 
+                            <span>
+                                <h2>Main Accent</h2>
+                                <input type="color" id="accent" name="accent" />
+                            </span>   
+                            <span>
+                                <h2>Dark Accent</h2>
+                                <input type="color" id="dkAccent" name="dkAccent" />
+                            </span>              
+                        </div>
+                    </div>
+
+                    <!-- Post Image -->
+                    <div class="twoCol">
+                        <span>
+                            <h2>Image</h2>
+                            <input type="text" id="imgURL" name="imgURL" placeholder="Image URL" />
+                        </span>
+                        <span>
+                            <h2>Icon</h2>
+                            <input type="text" id="icon" name="icon" value="♔" />
+                        </span>
+                    </div>
+
+                    <div>
+                        <h2>Lyrics</h2>
+                        <textarea id="lyrics" name="lyrics"></textarea>
+                    </div>
+
+                    <!-- Post Tag -->
+                    <div class="twoCol">
+                        <h2 class="fullWidth">Tag?</h2>
+                        <span class="twoCol">
+                            <label for="tagY">
+                                <input type="radio" id="tagY" name="tag" value="y" />
+                                <div><div></div></div>
+                                Yes
+                            </label>
+                            <label for="tagN">
+                                <input type="radio" id="tagN" name="tag" value="n" />
+                                <div><div></div></div>
+                                No
+                            </label>                        
+                        </span>
+                        <input type="text" id="tagText" name="tagText" class="ifTag hideFirst" />
+                    </div>
+
+                    <!-- Post Notes -->
+                    <div class="twoCol">
+                        <h2 class="fullWidth">Notes?</h2>
+                        <span class="twoCol">
+                            <label for="ntY">
+                                <input type="radio" id="ntY" name="nt" value="y" />
+                                <div><div></div></div>
+                                Yes
+                            </label>
+                            <label for="ntN">
+                                <input type="radio" id="ntN" name="nt" value="n" />
+                                <div><div></div></div>
+                                No
+                            </label>                        
+                        </span>
+                        <input type="text" id="ntText" name="ntText" class="ifNT hideFirst" />
+                    </div>
+
+                    <!-- Posting Template -->
+                    <div class="typeSwitch">
+                        <h2>Post Content</h2>
+                        <textarea id="postText" name="postText"></textarea>
+                    </div>
+
+                    <!-- END FORM CONTENTS -->
+                </div>
+
+                <span>
+                    <button id="updateTemp">Generate</button>
+                    <button id="runScript">Run Script</button>
+                </span>
+            </section>
+            <section class="result">
+                <h3 id="tab1" class="active">Preview</h3>
+                <h3 id="tab2">Code</h3>
+                <div id="tab1-content" class="scroll active">
+                    <div id="display">Click 'generate' to see a preview.</div>
+                </div>
+                <div id="tab2-content" class="scroll">
+                    <selectCode>Click to Highlight</selectCode>
+                    <pre><code><div id="code"></div></code></pre>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

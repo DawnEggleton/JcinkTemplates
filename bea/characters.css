@@ -1,0 +1,16 @@
+.character {
+    --accent: var(--character);
+}
+.carly {
+    --accent: var(--carly);
+}
+.glenn {
+    --accent: var(--glenn);
+}
+
+
+:root {
+    --character: #000000;
+    --carly: #ff0000;
+    --glenn: #00ff00;
+}

@@ -1,0 +1,45 @@
+luxblock {
+  line-height: 200%;
+}
+luxblock h2 + br,
+luxblock h3 + br {
+  display: none;
+}
+luxblock h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 300;
+  color: var(--accent);
+  letter-spacing: 5px;
+}
+luxblock h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: 'montserrat', sans-serif;
+  color: var(--accent);
+}
+luxblock b,
+luxblock i,
+luxblock a {
+  color: var(--accent);
+  padding: 0 2px;
+}
+luxblock b,
+luxblock i {
+  font-size: 14px;
+}
+luxblock b {
+  font-weight: 900;
+}
+luxblock i {
+  font-weight: 500;
+}
+luxblock a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 600;
+}
