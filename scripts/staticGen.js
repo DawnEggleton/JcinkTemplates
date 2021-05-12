@@ -161,10 +161,13 @@ $('#updateTemp').on('click', function() {
             break;
     }
 
+});
+
+function setCode() {
     $('#display').html(tempCode);
     var copyCode = tempCode.replace(/>/ig, '&gt;').replace(/</ig, '&lt;');
     $('#code').html('[dohtml]' + copyCode + '[/dohtml]');
-});
+}
 
 //order by month and year
 function orderEvents(num, yearArray, monthArray, eventArray, type, prefix) {
@@ -247,15 +250,6 @@ jQuery.fn.selectText = function(){
     }
 };
 
-//Add Flexible Fields
-/*
-function addFields (fieldVar, fieldType) {
-    for(var i = 0; i < $('input[name=add' + fieldType + ']').val(); i++) {
-        fieldVar[0]++;
-        addFieldSet(fieldVar, fieldType);
-    }
-}*/
-
 //Show/Hide Fields
 function showhide (inputName, shClass) {
     $('input[name="' + inputName + '"]').change(function () {
@@ -277,25 +271,6 @@ function hexToRgb(hex) {
     } : null;
   }
 
-  
-//Add/Subtract Fields
-/*
-function addFieldsOriginal(counterName, htmlPieces, appendBox) {
-    $('input[name="' + counterName + '"]').change(function () {
-        var html = '';
-        for (var i = 0; i < $(this).val(); i++) {
-            for (var j = 0; j < htmlPieces.length; j++) {
-                if (j == 0) {
-                    html += htmlPieces[j];
-                } else {
-                    html += i + htmlPieces[j];
-                }            
-            }
-        }
-        $('.' + appendBox).html(html);
-    });
-}
-*/
 function addFields(counter, counterName, htmlPieces, appendBox) {
     $('input[name="' + counterName + '"]').change(function () {
         if ($(this).val() < counter) {
@@ -404,6 +379,7 @@ $('input[name="type"]').change(function () {
         case 'timeline': 
             $('.typeSwitch').hide();
             $('.ifTime').show();
+            $('.ifTimeline').show();
             addFieldsPL('eventCount', eventHTML, 'eventContent');
             break;
         case 'tracker': 
@@ -412,6 +388,7 @@ $('input[name="type"]').change(function () {
             addFieldsPL('threadCount', threadHTML, 'threadContent');
             break;
         case 'imagedev': 
+        case 'image': 
             $('.typeSwitch').hide();
             $('.ifImage').show();          
             addFieldsPL('imgCount', imgHTML, 'imgContent');
@@ -419,9 +396,11 @@ $('input[name="type"]').change(function () {
         case 'playlist': 
             $('.typeSwitch').hide();
             $('.ifMusic').show();
+            $('.ifPlaylist').show();
             addFieldsPL('songCount', songHTML, 'songContent');
             break;
         case 'quotedev': 
+        case 'quote': 
             $('.typeSwitch').hide();
             $('.ifQuote').show();
             break;

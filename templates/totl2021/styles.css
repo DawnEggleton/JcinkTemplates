@@ -1,0 +1,573 @@
+/**********************************
+	Templates
+***********************************/
+.sl-tempWrap {
+    --displayFont: 'bigilla', serif;
+    --bodyFont: 'open sans', sans-serif;
+    --size-xs: 8px;
+    --size-xss: 9px;
+    --size-s: 10px;
+    --size-m: 12px;
+    --size-ml: 13px;
+    --size-l: 14px;
+    --size-xl: 16px;
+  
+    --black: rgb(44,44,44); 
+    --black0: rgba(44,44,44,0.2);
+    --black-40: rgba(44,44,44,0.4);
+    --black0: rgba(44,44,44,0.8);
+  
+    --dkgrey: rgb(54,54,54);
+    --dkgrey0: rgba(54,54,54, 0.6);
+    --dkgrey0: rgba(54,54,54, 0.8);
+  
+    --mgrey: rgb(74,74,74);
+  
+    --mlgrey: rgb(150,150,150);
+    
+    --lgrey: rgb(220, 220, 220);
+    --xdwhite: rgb(225, 225, 225);
+    --dwhite: rgb(240, 240, 240);
+  
+    --white: rgb(244, 244, 244);
+    --white7: rgba(244, 244, 244, 0.175);
+    --white-35: rgba(244, 244, 244, 0.35);
+    --white-40: rgba(244, 244, 244, 0.4);
+    --white-50: rgba(244, 244, 244, 0.5);
+    --white0: rgba(244, 244, 244, 0.6);
+    --white-70: rgba(244, 244, 244, 0.70);
+    --white-75: rgba(244, 244, 244, 0.75);
+    --white0: rgba(244, 244, 244, 0.8);
+
+	--brightAccent: rgb(87,188,210);
+    --dullAccent-70: rgba(129,206,222,0.7);
+    --dullAccent-35: rgba(129,206,222,0.35)
+}
+adults .sl-tempWrap {
+	--brightAccent:  rgb(165,61,116);
+	--dullAccent-35:  rgba(132,48,92,0.35);
+	--dullAccent-70:  rgba(132,48,92,0.7);
+}
+gryffindor .sl-tempWrap {
+	--brightAccent:  rgb(184,69,69);
+	--dullAccent-35:  rgba(153,60,60,0.35);
+	--dullAccent-70:  rgba(153,60,60,0.7);
+}
+hogwarts .sl-tempWrap {
+	--brightAccent:  rgb(120,55,159);
+	--dullAccent-35:  rgba(92,32,128,0.35);
+	--dullAccent-70:  rgba(92,32,128,0.7);
+}
+hufflepuff .sl-tempWrap {
+	--brightAccent:  rgb(206,170,91);
+	--dullAccent-35:  rgba(181,152,89,0.35);
+	--dullAccent-70:  rgba(181,152,89,0.7);
+}
+press .sl-tempWrap {
+	--brightAccent:  rgb(190,123,41);
+	--dullAccent-35:  rgba(161,102,29,0.35);
+	--dullAccent-70:  rgba(161,102,29,0.7);
+}
+ministry .sl-tempWrap {
+	--brightAccent:  rgb(35,129,134);
+	--dullAccent-35:  rgba(24,103,107,0.35);
+	--dullAccent-70:  rgba(24,103,107,0.7);
+}
+quidditch .sl-tempWrap {
+	--brightAccent:  rgb(162,124,187);
+	--dullAccent-35:  rgba(139,108,159,0.35);
+	--dullAccent-70:  rgba(139,108,159,0.7);
+}
+ravenclaw .sl-tempWrap {
+	--brightAccent:  rgb(82,90,163);
+	--dullAccent-35:  rgba(66,73,142,0.35);
+	--dullAccent-70:  rgba(66,73,142,0.7);
+}
+healer .sl-tempWrap {
+	--brightAccent:  rgb(121,185,127);
+	--dullAccent-35:  rgba(113,164,118,0.35);
+	--dullAccent-70:  rgba(113,164,118,0.7);
+}
+slytherin .sl-tempWrap {
+	--brightAccent:  rgb(70,126,71);
+	--dullAccent-35:  rgba(64,106,65,0.35);
+	--dullAccent-70:  rgba(64,106,65,0.7);
+}
+returners .sl-tempWrap {
+	--brightAccent:  rgb(105,111,152);
+	--dullAccent-35:  rgba(92,96,123,0.35);
+	--dullAccent-70:  rgba(92,96,123,0.7);
+}
+entertainment .sl-tempWrap {
+	--brightAccent:  rgb(102,193,196);
+	--dullAccent-35:  rgba(92,172,175,0.35);
+	--dullAccent-70:  rgba(92,172,175,0.7);
+}
+adults .sl-tempBox,
+gryffindor .sl-tempBox,
+hogwarts .sl-tempBox,
+hufflepuff .sl-tempBox,
+press .sl-tempBox,
+ministry .sl-tempBox,
+quidditch .sl-tempBox,
+ravenclaw .sl-tempBox,
+healer .sl-tempBox,
+slytherin .sl-tempBox,
+returners .sl-tempBox,
+entertainment .sl-tempBox {
+	border-color: var(--brightAccent);
+}
+
+.sl-tempWrap {
+	margin: 0 auto;
+	max-width: 450px;
+	border: 10px solid var(--black);
+	background: var(--white);
+	box-sizing: border-box;
+	font-family: var(--bodyFont);
+	font-size: var(--sBody, var(--size-s));
+	line-height: 160%;
+	color: var(--mgrey);
+}
+.sl-tempWrap img {
+    width: 100%;
+}
+.sl-tempBox {
+	padding: 30px;
+	border: 1px solid var(--white-40);
+	background: var(--black);
+	box-sizing: border-box;
+}
+.sl-tempContent {
+	background: var(--white);
+	padding: 30px;
+	text-align: justify;
+	line-height: 200%;
+}
+divider {
+	display: block;
+	width: calc(100% + 60px);
+	height: 1px;
+	background: var(--black);
+	margin: 30px -30px;
+}
+.sl-tempChar {
+	display: grid;
+	grid-template-columns: 100px calc(100% - 130px);
+	grid-column-gap: 30px;
+	align-items: center;
+}
+.sl-tempWant .sl-tempChar {
+	margin-bottom: 30px;
+}
+.sl-tempChar img {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid var(--dullAccent-70);
+	box-shadow: 0 0 0 5px var(--dullAccent-35);
+}
+.sl-tempChar b,
+.sl-tempChar a {
+	padding: 0 !important;
+	text-transform: uppercase;
+	font-size: var(--sBody, var(--size-s));
+}
+.sl-tempChar b.tag {
+	align-self: end;
+}
+.sl-tempChar span {
+	align-self: start;
+	text-transform: uppercase;
+	text-align: justify;
+	font-size: var(--xsBody, var(--size-xs));
+	letter-spacing: 1px;
+}
+.sl-tempChar span a {
+	font-size: var(--xsBody, var(--size-xs));
+}
+.sl-tempTab.sl-tempContent {
+	padding: 0;
+}
+.sl-tempTab {
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+.sl-tempTabs {
+	padding: 15px;
+	border-right: 1px solid var(--black);
+	box-sizing: border-box;
+}
+.sl-tempTabs span {
+  display: block;
+  float: left;
+  background: var(--xdwhite);
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 0 5px 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: var(--xsBody, var(--size-xs));
+  cursor: pointer;
+}
+.sl-tempWantTab {
+	grid-template-columns: 75px auto;
+}
+.sl-tempWantTab .sl-tempTabs span {
+	padding: 0;
+	border-radius: 50%;
+    margin: 0 0 10px 0;
+    width: 40px;
+    height: 40px;
+}
+.sl-tempTabs span img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	opacity: 0.5;
+	filter: grayscale(100%);
+}
+.sl-tempTabs span.sl-activeTab img {
+	opacity: 1;
+	filter: grayscale(0%);
+}
+.sl-tempTabs span.sl-activeTab {
+	font-weight: bold;
+	color: var(--black);
+	background: var(--dullAccent-35);
+}
+.sl-tempTab .sl-tempScroll {
+	margin: 30px;
+}
+.sl-sticky {
+	position: sticky;
+  position: -webkit-sticky;
+	overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--black) transparent;
+}
+.sl-tempTabCont {
+	display: none;
+}
+.sl-tempTabCont.sl-activeTab {
+	display: block;
+}
+.sl-tempPlay .sl-tempContent {
+	padding: 0;
+}
+.sl-tempPlay .sl-tempScroll {
+	padding-right: 0 !important;
+}
+.sl-tempSong {
+	display: grid;
+	grid-template-columns: 15px calc(100% - 15px);
+	grid-column-gap: 15px;
+	border-bottom: 1px solid var(--black);
+	padding: 30px;
+	align-items: center;
+}
+.sl-tempSong i {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	font-size: var(--lBody, var(--size-l));
+}
+.sl-tempSong b {
+	align-self: end;
+	padding: 0 !important;
+	font-size: var(--sBody, var(--size-s));
+	text-transform: uppercase;
+}
+.sl-tempSong span {
+	align-self: start;
+	font-size: var(--xsBody, var(--size-xs));
+	text-transform: uppercase;
+	letter-spacing: 0;
+}
+.sl-tempSong:last-of-type {
+	border-bottom: 0;
+}
+.sl-tempQuote quote {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--black);
+	line-height: 160%;
+}
+.sl-tempQuote qsource {
+	display: block;
+	font-size: var(--xsBody, var(--size-xs));
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 20px 20px 0;
+}
+.sl-tempQuote qsource:before {
+	content: '— ';
+}
+
+.sl-memDir .sl-tempContent {
+	padding: 0;
+}
+.open.dir-char {
+	border-bottom: 1px solid var(--black);
+}
+.dir-char:last-of-type {
+	border-bottom: 0;
+}
+.dir-name {
+	font-size: var(--lBody, var(--size-l));
+	text-transform: uppercase;
+	color: var(--black);
+	font-weight: bold;
+	padding: 15px;
+	border-bottom: 1px solid var(--black);
+	cursor: pointer;
+	display: grid;
+	grid-template-columns: calc(100% - 100px) 70px;
+	grid-column-gap: 30px;
+}
+.dir-name i {
+	text-align: right;
+	font-size: var(--xsBody, var(--size-xs));
+	line-height: var(--xsBody), var(--size-xs));
+	align-self: end;
+	font-style: normal;
+}
+.dir-info {
+	height: 0;
+	overflow: hidden;
+	transition-duration: 0.5s;
+}
+.open .dir-info {
+	height: 230px;
+}
+.dir-infoInner {
+	margin: 10px 30px 30px;
+	padding-right: 15px;
+	overflow: auto;
+	height: calc(100% - 140px);
+	font-size: var(--mBody, var(--size-m));
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	scrollbar-color: var(--black) transparent;
+}
+.dir-topper {
+	display: grid;
+	grid-template-columns: 70px calc(100% - 130px);
+	grid-column-gap: 30px;
+	padding: 25px 0 15px 35px;
+	letter-spacing: 1px;
+}
+.dir-topper img {
+	grid-row: 1 / 3;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 5px solid var(--dullAccent-70);
+	box-shadow: 0 0 0 5px var(--dullAccent-35);
+	object-fit: cover;
+}
+.dir-topper a {
+	margin: 0;
+	padding: 0;
+	align-self: end;
+	font-size: var(--sBody, var(--size-s)) !important;
+}
+.dir-topper b {
+	font-size: var(--xsBody, var(--size-xs)) !important;
+	letter-spacing: 1px;
+	line-height: 14px;
+	padding: 0;
+	text-transform: uppercase;
+	color: var(--black);
+	text-align: left;
+}
+
+
+/**********************************
+	Templates
+***********************************/
+
+.xlarge .sl-tempWrap {
+	max-width: 600px;
+}
+.large .sl-tempWrap {
+	max-width: 525px;
+}
+.small .sl-tempWrap {
+	max-width: 375px;
+}
+.xsmall .sl-tempWrap {
+	max-width: 300px;
+}
+
+
+.dark .sl-tempWrap {
+	border-color: var(--mgrey);
+	background: var(--black);
+	color: var(--white0);
+}
+
+.dark .sl-tempBox {
+	border-color: var(--white7);
+	background: var(--dkgrey);
+}
+
+.dark .sl-tempContent {
+	background: var(--black);
+	border: 1px solid var(--white7);
+}
+.dark divider {
+	background: var(--white7);
+}
+.dark .sl-sticky,
+.dark .sl-tempScroll {
+	scrollbar-color: var(--white-70) transparent;
+}
+.dark .sl-tempSong {
+	border-color: var(--white7);
+}
+.dark .sl-tempQuote quote {
+	color: var(--white);
+}
+
+.medFont .sl-tempWrap {
+	font-size: var(--mBody, var(--size-m));
+}
+.lrgFont .sl-tempWrap {
+	font-size: var(--lBody, var(--size-l));
+}
+
+.scroll .sl-tempScroll,
+.shortScroll .sl-tempScroll,
+.tallScroll .sl-tempScroll {
+	overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--black) transparent;
+	padding-right: 10px;
+}
+.scroll .sl-tempScroll {
+	max-height: 300px;
+}
+.shortScroll .sl-tempScroll {
+	max-height: 175px;
+}
+.tallScroll .sl-tempScroll {
+	max-height: 425px;
+}
+
+.twoCol .sl-tempScroll,
+.threeCol .sl-tempScroll,
+.fourCol .sl-tempScroll {
+	display: grid;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+.twoCol .sl-tempScroll {
+	grid-template-columns: 1fr 1fr;
+}
+.threeCol .sl-tempScroll {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.fourCol .sl-tempScroll {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+/**********************************
+	Headers
+***********************************/
+
+.sl-tempWrap h1,
+.sl-tempWrap h2,
+.sl-tempWrap h3,
+.sl-tempWrap h4,
+.sl-tempWrap h5,
+.sl-tempWrap h6 {
+	text-transform: uppercase;
+	color: var(--black);
+	margin: 20px 0 10px 0;
+}
+.sl-tempScroll > h1:first-of-type,
+.sl-tempScroll > h2:first-of-type,
+.sl-tempScroll > h3:first-of-type,
+.sl-tempScroll > h4:first-of-type,
+.sl-tempScroll > h5:first-of-type,
+.sl-tempScroll > h6:first-of-type
+divider + h1,
+divider + h2,
+divider + h3,
+divider + h4,
+divider + h5,
+divider + h6 {
+	margin-top: 0;
+}
+.sl-tempWrap h1 {
+	font-size: var(--xlBody, var(--size-xl));
+}
+.sl-tempWrap h2 {
+	font-size: var(--lBody, var(--size-l));
+}
+.sl-tempWrap h3 {
+	font-size: var(--sBody, var(--size-s));
+}
+.sl-tempWrap h4,
+.sl-tempWrap h5,
+.sl-tempWrap h6 {
+	font-size: var(--xsBody, var(--size-xs));
+}
+.sl-tempWrap h5,
+.sl-tempWrap h6 {
+	width: 200px;
+}
+.sl-tempWrap h6 {
+	color: var(--mgrey);
+}
+
+.sl-tempWrap b,
+.sl-tempWrap i,
+.sl-tempWrap a {
+	color: var(--black);
+	padding: 0 5px;
+}
+.sl-tempWrap b,
+.sl-tempWrap a {
+	font-size: var(--mBody, var(--size-m));
+}
+.sl-tempWrap i {
+	letter-spacing: 1px;
+}
+.sl-tempWrap a {
+	text-transform: uppercase;
+}
+.dark .sl-tempWrap h1,
+.dark .sl-tempWrap h2,
+.dark .sl-tempWrap h3,
+.dark .sl-tempWrap h4,
+.dark .sl-tempWrap h5,
+.dark .sl-tempWrap b,
+.dark .sl-tempWrap i,
+.dark .sl-tempWrap a {
+	color: var(--white);
+}
+.dark .sl-tempWrap h6 {
+	color: var(--white-70);
+}
+
+.dark .sl-tempTabs {
+	border-color: var(--white7);
+}
+.dark .sl-tempTabs span {
+	background: var(--white7);
+	color: var(--white0);
+}
+.dark .sl-tempTabs span.sl-activeTab {
+	background: var(--dullAccent-35);
+	color: var(--white);
+}

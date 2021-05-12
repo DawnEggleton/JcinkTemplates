@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TOTL Anniversary Generator</title>
+        <link rel="stylesheet" href="../generator/generator.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
+        <script src="../../scripts/jquery-1.12.1.min.js"></script>
+        <script defer src="../generator/staticGen.js"></script>
+        <link rel="stylesheet" href="../generator/spectrum.css" />
+        <script src="../generator/spectrum.js"></script>
+
+        <!-- Template Specific -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="scripts.js"></script>
+        <script defer src="flexGen.js"></script>
+    </head>
+    <body id="generate">
+        <header>
+            <h1>TOTL Anniversary Template</h1>
+            <p>Use the form to the left and hit 'generate' to produce a sample and the associated code! Please note that to test script-based functions, you must first press 'generate' and then press 'run script'. Use &lt;divider&gt;&lt;/divider&gt; to create a split.</p>
+            <a href="../generator/generator.html"><i class="fas fa-angle-left"></i> Back</a>
+        </header>
+        <main>
+            <section class="form">
+                <div class="scroll">
+
+                    <!-- START FORM CONTENTS -->
+
+                    <!-- Template Type -->
+                    <h2>Template Type</h2>
+                    <div class="tempType">
+                        <label for="general">
+                            <input type="radio" id="general" name="type" value="general" />
+                            <div><div></div></div>
+                            General
+                        </label>
+                        <label for="posting">
+                            <input type="radio" id="posting" name="type" value="posting" />
+                            <div><div></div></div>
+                            Posting
+                        </label>
+                        <label for="tabbed">
+                            <input type="radio" id="tabbed" name="type" value="tabbed" />
+                            <div><div></div></div>
+                            Tabbed
+                        </label>
+                        <label for="wanted">
+                            <input type="radio" id="wanted" name="type" value="wanted" />
+                            <div><div></div></div>
+                            Wanted
+                        </label>
+                        <label for="playlist">
+                            <input type="radio" id="playlist" name="type" value="playlist" />
+                            <div><div></div></div>
+                            Playlist
+                        </label>
+                        <label for="imagedev">
+                            <input type="radio" id="imagedev" name="type" value="imagedev" />
+                            <div><div></div></div>
+                            Image Dev
+                        </label>
+                        <label for="quotedev">
+                            <input type="radio" id="quotedev" name="type" value="quotedev" />
+                            <div><div></div></div>
+                            Quote Dev
+                        </label>
+                    </div>
+
+                    <!-- Styling -->
+                    <span class="threeCol">
+                        <span>
+                            <h2>Template Size</h2>
+                            <select name="tempSize">
+                                <option value="">Standard</option>
+                                <option value="xsmall">Extra Small</option>
+                                <option value="small">Small</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">Extra Large</option>
+                            </select>
+                        </span>                        
+                        <span>
+                            <h2>Font Size</h2>
+                            <select name="fontSize">
+                                <option value="">Standard</option>
+                                <option value="medFont">Medium Font</option>
+                                <option value="lrgFont">Large Font</option>
+                            </select>
+                        </span>
+                        <span>
+                            <h2 class="fullWidth">Dark Mode?</h2>
+                            <span class="twoCol">
+                                <label for="dmY">
+                                    <input type="radio" id="dmY" name="dm" value="y" />
+                                    <div><div></div></div>
+                                    Yes
+                                </label>
+                                <label for="dmN">
+                                    <input type="radio" id="dmN" name="dm" value="n" />
+                                    <div><div></div></div>
+                                    No
+                                </label>                        
+                            </span>
+                        </span>
+                    </span>
+                    <span class="twoCol">
+                        <h2 class="fullWidth">Scrolling?</h2>
+                        <span class="twoCol">
+                            <label for="scY">
+                                <input type="radio" id="scY" name="sc" value="y" />
+                                <div><div></div></div>
+                                Yes
+                            </label>
+                            <label for="scN">
+                                <input type="radio" id="scN" name="sc" value="n" />
+                                <div><div></div></div>
+                                No
+                            </label>                        
+                        </span>
+                        <span class="hideFirst ifScroll">
+                            <span class="twoCol">
+                                <h2>Scroll Height</h2>
+                                <select name="scrollSize">
+                                    <option value="scroll">Standard</option>
+                                    <option value="shortScroll">Short</option>
+                                    <option value="tallScroll">Tall</option>
+                                </select>
+                            </span>
+                        </span>
+                    </span>
+                    <h2 style="margin-top: 20px;">Coloring</h2>
+                    <span class="threeCol" style="margin-top: 0;">
+                        <label for="ccN">
+                            <input type="radio" id="ccN" name="tc" value="n" />
+                            <div><div></div></div>
+                            Group
+                        </label>
+                        <label for="ccY">
+                            <input type="radio" id="ccY" name="tc" value="y" />
+                            <div><div></div></div>
+                            Custom
+                        </label>    
+                        <label for="ccD">
+                            <input type="radio" id="ccD" name="tc" value="default" />
+                            <div><div></div></div>
+                            Default
+                        </label>                        
+                    </span>
+                    <div class="hideFirst ifGroupCol">
+                        <span class="twoCol">
+                            <h2>Group</h2>
+                            <select name="groupColor">
+                                <option value="Gryffindor">Gryffindor</option>
+                                <option value="Ravenclaw">Ravenclaw</option>
+                                <option value="Slytherin">Slytherin</option>
+                                <option value="Hufflepuff">Hufflepuff</option>
+                                <option value="Ministry">Ministry</option>
+                                <option value="Healer">Healer</option>
+                                <option value="Quidditch">Quidditch</option>
+                                <option value="Hogwarts Staff">Hogwarts Staff</option>
+                                <option value="Press">Press</option>
+                                <option value="Adults">Adult</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Returners">Returners</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="hideFirst ifCustomCol">
+                        <div class="threeCol">
+                            <span>
+                                <h2>Character</h2>
+                                <input type="text" id="char" name="char" placeholder="First name only." /> 
+                            </span>
+                            <span>
+                                <h2>Dull Accent</h2>
+                                <input type="color" id="dullAccent" name="dullAccent" />
+                            </span>
+                            <span>
+                                <h2>Bright Accent</h2>
+                                <input type="color" id="brightAccent" name="brightAccent" />  
+                            </span>               
+                        </div>
+                    </div>
+
+                    <!-- General Template -->
+                    <div class="hideFirst typeSwitch ifGen">
+                        <hr>
+                        <h2>Post Content</h2>
+                        <textarea id="genText" name="genText"></textarea>
+                    </div>
+
+                    <!-- Posting Template -->
+                    <div class="hideFirst typeSwitch ifPost">
+                        <hr>
+                        <div class="twoCol">
+                            <h2>Image</h2>
+                            <input type="text" id="postImage" name="postImage" />
+                            <h2>Tag</h2>
+                            <input type="text" id="postTag" name="postTag" />
+                            <h2>Lyrics</h2>
+                            <input type="text" id="postLyrics" name="postLyrics" />
+                        </div>
+                        <h2>Post Content</h2>
+                        <textarea id="postText" name="postText"></textarea>
+                    </div>
+
+                    <!-- Tabbed Template -->
+                    <div class="hideFirst typeSwitch ifTab">
+                        <hr>
+                        <span class="twoCol">
+                            <h2>Number of Tabs</h2>
+                            <input type="number" name="tabCount" id="tabCount" value="1" />
+                        </span>                    
+                        <h2 class="fullWidth" style="margin-top: 20px;">Tabs</h2>
+                        <div class="tabContents"></div>
+                    </div>
+
+                    <!-- Wanted -->
+                    <div class="hideFirst typeSwitch ifWant">
+                        <hr>
+                        <div class="twoCol">
+                            <h2 class="fullWidth">Style</h2>
+                            <span class="twoCol">
+                                <label for="wtY">
+                                    <input type="radio" id="wtY" name="wt" value="y" />
+                                    <div><div></div></div>
+                                    Non-tabbed
+                                </label>
+                                <label for="wtN">
+                                    <input type="radio" id="wtN" name="wt" value="n" />
+                                    <div><div></div></div>
+                                    Tabbed
+                                </label>                        
+                            </span>
+                        </div>
+                        <span class="twoCol">
+                            <h2>Number of Sections</h2>
+                            <input type="number" name="charCount" id="charCount" value="1" />
+                        </span>                     
+                        <h2 class="fullWidth" style="margin-top: 20px;">Sections</h2>
+                        <div class="wantContents"></div>
+                    </div>
+
+                    <!-- Playlist Template -->
+                    <div class="hideFirst typeSwitch ifMusic">
+                        <hr>
+                        <span class="twoCol">
+                            <h2>Number of Songs</h2>
+                            <input type="number" name="songCount" id="songCount" value="1" />
+                        </span>
+                        <h2 class="fullWidth">Songs</h2>
+                        <span class="twoCol songList songContent"></span>
+                    </div>
+
+                    <!-- Image Dev Template -->
+                    <div class="hideFirst typeSwitch ifImage">
+                        <hr>
+                        <h2>Number of Columns</h2>
+                        <span class="fiveCol">
+                            <label for="col1">
+                                <input type="radio" id="col1" name="cols" value="1" />
+                                <div><div></div></div>
+                                1
+                            </label> 
+                            <label for="col2">
+                                <input type="radio" id="col2" name="cols" value="twoCol" />
+                                <div><div></div></div>
+                                2
+                            </label>   
+                            <label for="col3">
+                                <input type="radio" id="col3" name="cols" value="threeCol" />
+                                <div><div></div></div>
+                                3
+                            </label>  
+                            <label for="col4">
+                                <input type="radio" id="col4" name="cols" value="fourCol" />
+                                <div><div></div></div>
+                                4
+                            </label>                    
+                        </span>
+                        <span class="twoCol">
+                            <h2>Number of Images</h2>
+                            <input type="number" name="imgCount" id="imgCount" value="1" />
+                        </span>
+                        <h2>Image URLs</h2>
+                        <span class="urls imgContent"></span>
+                    </div>
+
+                    <!-- Quote Template -->
+                    <div class="hideFirst typeSwitch ifQuote">
+                        <hr>
+                        <h2>Quote</h2>
+                        <textarea id="quoteBody" name="quoteBody"></textarea>
+                        <h2>Source</h2>
+                        <input type="text" name="quoteSource" id="quoteSource" placeholder="Source" />
+                    </div>
+
+                </div>
+
+                <!-- END FORM CONTENTS -->
+
+                <span>
+                    <button id="updateTemp">Generate</button>
+                    <button id="runScript">Run Script</button>
+                </span>
+            </section>
+            <section class="result">
+                <h3 id="tab1" class="active">Preview</h3>
+                <h3 id="tab2">Code</h3>
+                <div id="tab1-content" class="scroll active">
+                    <div id="display">Click 'generate' to see a preview.</div>
+                </div>
+                <div id="tab2-content" class="scroll">
+                    <selectCode>Click to Highlight</selectCode>
+                    <pre><code><div id="code"></div></code></pre>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
