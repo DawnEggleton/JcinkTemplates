@@ -118,6 +118,7 @@ $('#updateTemp').on('click', function() {
             tempCode = setGeneralCode();
             break;
         case 'posting':
+            console.log('posting template');
             tempCode = setPostCode();
             break;
         case 'large':
@@ -161,13 +162,11 @@ $('#updateTemp').on('click', function() {
             break;
     }
 
-});
-
-function setCode() {
     $('#display').html(tempCode);
     var copyCode = tempCode.replace(/>/ig, '&gt;').replace(/</ig, '&lt;');
     $('#code').html('[dohtml]' + copyCode + '[/dohtml]');
-}
+
+});
 
 //order by month and year
 function orderEvents(num, yearArray, monthArray, eventArray, type, prefix) {

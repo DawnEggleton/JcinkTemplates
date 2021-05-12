@@ -109,7 +109,7 @@
                         </span>
                         <span>
                             <h2>Color Mode</h2>
-                            <select name="fontSize">
+                            <select name="colorMode">
                                 <option value="">Auto</option>
                                 <option value="dark">Dark</option>
                                 <option value="light">Light</option>
@@ -174,28 +174,12 @@
                         </span>
                         <span class="twoCol fullWidth">
                             <h2 class="fullWidth">Scrolling?</h2>
-                            <span class="twoCol">
-                                <label>
-                                    <input type="radio" id="scroll_yes" name="scrolling" value="scroll" />
-                                    <div><div></div></div>
-                                    Yes
-                                </label>
-                                <label>
-                                    <input type="radio" id="scroll_no" name="scrolling" value="" />
-                                    <div><div></div></div>
-                                    No
-                                </label>                        
-                            </span>
-                            <span class="hideFirst ifPostScroll">
-                                <span class="twoCol">
-                                    <h2>Scroll Height</h2>
-                                    <select name="scrollSize">
-                                        <option value="avgScroll">Standard</option>
-                                        <option value="shortScroll">Short</option>
-                                        <option value="tallScroll">Tall</option>
-                                    </select>
-                                </span>
-                            </span>
+                            <select name="scrollMode">
+                                <option value="">None</option>
+                                <option value="shortScroll">Short</option>
+                                <option value="avgScroll">Average</option>
+                                <option value="tallScroll">Tall</option>
+                            </select>
                         </span>
                         <h2>Post Content</h2>
                         <textarea id="postText" name="postText"></textarea>
