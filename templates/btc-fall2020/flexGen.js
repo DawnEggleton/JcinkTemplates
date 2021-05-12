@@ -76,14 +76,14 @@ function setPostCode() {
     \n</div></div><link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Share+Tech+Mono&display=swap" rel="stylesheet"><link href="https://dawneggleton.github.io/JcinkTemplates/templates/btc-fall2020/styles.css" rel="stylesheet"><link href="//dawneggleton.github.io/JcinkTemplates/styles/characters.css" rel="stylesheet">${colors}`;
     switch(accentMode) {
         case 'color_group':
-            code = `<${group}>${template}</${group}>`;
+            code = `<${group}><span class="${classList}">${template}</span></${group}>`;
             break;
         case 'color_custom':
             code = `<span class="${identifier} ${classList}">${template}</span>`;
             break;
         case 'color_default':
         default:
-            code = `${template}`;
+            code = `<span class="${classList}">${template}</span>`;
             break;
     }
 
